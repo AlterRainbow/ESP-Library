@@ -1,4 +1,6 @@
-local function Chams(parents, parts, color, onlyPlayers)
+local ESP = {}
+
+function ESP:Chams(parents, parts, color, onlyPlayers)
     local localPlayer = game.Players.LocalPlayer
     local parents = parents or {localPlayer.Name}
 	local parts = parts or {"HumanoidRootPart"}
@@ -65,3 +67,5 @@ local function Chams(parents, parts, color, onlyPlayers)
 
     return instances
 end
+
+return ESP
