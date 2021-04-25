@@ -10,8 +10,9 @@ local esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlterRain
 
 local parents = {"Lever"} -- the objects parents names, you can also leave this empty.
 local parts = {"Case", "Switch"}  -- the objects names, you can also leave this empty.
+local props = {color = Color3.fromRGB(255, 0, 0), alwaysOnTop = true, onlyPlayers = false, transparency = 0.5} -- the properties table, you can include this, there's a default property in the script.
 
-local example = esp:Chams(parents, parts, Color3.fromRGB(255, 0, 255), false) -- creates chams for every instance in the game that is a part and has at a name in the parts table, the part is also a child of an instance in the game that has a name in the parents table.
+local example = esp:Chams(parents, parts, props) -- creates chams for every instance in the game that is a part and has at a name in the parts table, the part is also a child of an instance in the game that has a name in the parents table.
 
 wait(10)
 
@@ -27,8 +28,9 @@ local esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlterRain
 
 local parents = {} -- you can put a players name you don't want to add chams for in it, you can also leave it empty.
 local parts = {} -- you can also leave this empty. It will default to 'HumanoidRootPart'.
+local props = {onlyPlayers = true}
 
-local plrs = esp:Chams(parents, parts, Color3.fromRGB(0, 255, 0), true) -- creates chams for every player in the game.
+local plrs = esp:Chams(parents, parts, props) -- creates chams for every player in the game.
 
 wait(10)
 
@@ -43,8 +45,14 @@ local esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlterRain
 
 local parents = {}
 local parts = {"HumanoidRootPart", "Head", "Right Leg", "Left Leg", "Right Arm", "Left Arm"}
+local props = {
+    color = Color3.fromRGB(255, 0, 0),
+    transparency = 0,
+    alwaysOnTop = true,
+    onlyPlayers = false
+}
 
-local plrChams = esp:Chams(parents, parts, Color3.fromRGB(14, 121, 121), true)
+local plrChams = esp:Chams(parents, parts, props)
 ```
 
 -- Notes --
