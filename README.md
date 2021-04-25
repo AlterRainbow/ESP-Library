@@ -63,4 +63,4 @@ I will add a lot more, boxes, health. Basically everything a good ESP library wo
 
 Send me bugs etc.
 
-Discord: AlterRainbow#6089
+Discord: Alter#6089
