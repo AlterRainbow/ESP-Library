@@ -57,7 +57,11 @@ local plrChams = esp:Chams(parents, parts, props)
 
 -- Notes --
 
-I do not log your IP, HWID or anything else.
+I started to log execution times for the scripts. This is so I can see which script is active and whether or not I should update them.
+
+You can join the discord server to see the logs.
+
+https://discord.gg/agrk5GYruW
 
 I will add a lot more, boxes, health. Basically everything a good ESP library would have.
 
