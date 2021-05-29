@@ -10,9 +10,9 @@ local esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlterRain
 
 local parents = {"Lever"} -- the objects parents names, you can also leave this empty.
 local parts = {"Case", "Switch"}  -- the objects names, you can also leave this empty.
-local props = {color = Color3.fromRGB(255, 0, 0), alwaysOnTop = true, onlyPlayers = false, transparency = 0.5} -- the properties table, you can include this, there's a default property in the script.
+local props = {color = Color3.fromRGB(255, 0, 0), alwaysOnTop = true, onlyPlayers = false, transparency = 0.5} -- the properties table, you can include this, there's a default property table in the script.
 
-local example = esp:Chams(parents, parts, props) -- creates chams for every instance in the game that is a part and has at a name in the parts table, the part is also a child of an instance in the game that has a name in the parents table.
+local example = esp:Chams(parents, parts, props) -- creates chams for every instance in the game that is a part, has its name in the parts table and its parent's name is in the parents table.
 
 wait(10)
 
@@ -22,7 +22,7 @@ end
 
 --// For players in the game.
 
--- They do not reappear when a player respawns, joins. It's 4 AM and I am tired. I'll add this tomorrow.
+-- They do not reappear when a player respawns/joins. It's 4 AM and I am tired. I'll add this soon.
 
 local esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlterRainbow/ESP-Library/main/ESPLib.lua"))() -- gets the esp lib.
 
